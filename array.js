@@ -58,4 +58,16 @@ cleanedEmails.forEach((email) => {
   }
 });
 
-console.log(counter);
+const scores = [
+  { name: "Mohammad Reza", score: 20 },
+  { name: "Maedeh", score: 18 },
+  { name: "Mina", score: 17 },
+  { name: "Neda", score: 15 },
+  { name: "Mahsa", score: 13 },
+];
+
+const winners = scores
+  .filter((winner) => winner.score >= 17)
+  .map((winner) => winner.name);
+
+console.log(winners);
